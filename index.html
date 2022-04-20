@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Тестовая страница</title>
+<!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+<style>
+  .underline {
+   width: 100px;
+   height: 8px;
+   background: #c59d5f;
+   margin-left: auto;
+   margin-right: auto;
+ }
+ .title {
+   text-align: center;
+   margin-bottom: 2rem;
+ }
+ .section{
+   display: flex;
+ }
+ .images{
+   border:5px solid #c59d5f;
+   width: 200px;
+ 
+   border-radius: 10px;
+   background-repeat: no-repeat;
+   background-size: cover;
+ }
+ .head{
+   margin-bottom: 30px;
+   width: 500px;
+   height: 150px;
+  justify-content: space-between;
+  padding: 15px;
+ 
+ 
+ }
+ .text{
+   width: 300px;
+   height: 150px;
+ margin-left: 20px;
+ 
+ }
+ h4{
+   letter-spacing: 3px
+ }
+ span{
+   color: #c59d5f;
+   letter-spacing: 3px
+ }
+ .gic{
+   border:1px solid black;
+   border-style: dotted;
+ }
+ p{
+   padding: 5px;
+   color: #617d98;
+ }
+ #menuOur{
+   margin-right: auto;
+   margin-left: auto;
+ 
+   width: 1200px;
+   display: flex;
+   flex-wrap: wrap;
+ 
+ }
+  #for-button{
+   
+margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  }
+  .button-one {
+  background: transparent;
+  border-color: #c59d5f;
+  font-size: 1rem;
+  text-transform: capitalize;
+  margin:10px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+ 
+height: 30px;
+  cursor: pointer;
+ 
+}
+.button-one:hover {
+  background: #c59d5f;
+ 
+}
+.inputNumber{
+  width: 100px;
+  height: 20px;
+}
+body{
+  background-color: rgb(233, 245, 248);
+}
+ 
+   </style>
+ 
+ 
+ 
+ <body>
+  <div class="title">
+    <h1>Our Menu</h1>
+    <div class="underline"></div>
+      <div id="for-button" class="for-butoon">
+          <button id="all"type="=button" class="button-one"> All</button>
+          <button id="reakfast" type="=button" class="button-one"> Breakfast</button>
+          <button id="lunch"type="=button" class="button-one"> Lunch</button>
+          <button id="shakes"type="=button" class="button-one"> Shakes</button>
+          <button id="dinner"type="=button" class="button-one"> Dinner</button>
+      </div>
+  </div>
+
+ <div id="menuOur"></div>
+ <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog" role="document">
+       <div class="modal-content">
+           <div class="modal-header">
+               <h5 class="modal-title" id="exampleModalLabel"></h5>
+               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+               <span aria-hidden="true">&times;</span>
+             </div>
+           <div class="modal-body">
+               ...
+           </div>
+           <div class="modal-footer">
+
+               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+               <button type="button" class="btn btn-primary" id="liveToastBtn">Order</button>
+           </div>
+       </div>
+   </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+<script src="./scripts/main.js"></script>
+</body>
+
+</html>
